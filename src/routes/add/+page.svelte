@@ -42,7 +42,7 @@
 		/>
 		<input name="notes" type="text" placeholder="Notes" bind:value={stop.notes} />
 		<input name="signers" type="text" placeholder="Signers" bind:value={stop.signers} />
-		<input type="submit" value="Add Note" />
+		<input class="addBtn" type="submit" value="Add Note" />
 	</form>
 </div>
 
@@ -62,6 +62,20 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
+	}
+
+	.addBtn {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		overflow: hidden;
+		background-color: #767676;
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+		border: 1px solid #767676;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
 	}
 
 	.addForm input[type='text'] {

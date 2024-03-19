@@ -24,7 +24,7 @@
 
 		<input name="password" type="password" placeholder="Password" value={user.password} />
 
-		<input type="submit" value="Submit" />
+		<input class="loginBtn" type="submit" value="Submit" />
 		<div>
 			<p>
 				Don't have an account? <a class="link" href="/register">Register User</a>
@@ -50,6 +50,20 @@
 		text-align: center;
 		color: red;
 		font-weight: bold;
+	}
+
+	.loginBtn {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		overflow: hidden;
+		background-color: #767676;
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+		border: 1px solid #767676;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
 	}
 
 	.login-form {

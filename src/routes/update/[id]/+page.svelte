@@ -47,7 +47,7 @@
 		/>
 		<input name="notes" type="text" placeholder="Notes" bind:value={stopData.notes} />
 		<input name="signers" type="text" placeholder="Signers" bind:value={stopData.signers} />
-		<input type="submit" value="Update Note" />
+		<input class="updateBtn" type="submit" value="Update Note" />
 	</form>
 </div>
 
@@ -86,5 +86,19 @@
 		border: solid 1px #767676;
 		border-radius: 8px;
 		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.updateBtn {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		overflow: hidden;
+		background-color: #767676;
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+		border: 1px solid #767676;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
 	}
 </style>

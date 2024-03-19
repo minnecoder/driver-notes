@@ -33,7 +33,7 @@
 			value={user.confirmPassword}
 		/>
 
-		<input type="submit" value="Submit" />
+		<input class="registerBtn" type="submit" value="Submit" />
 	</form>
 	<p>Already have an account? <a class="link" href="/">Log In</a></p>
 </div>
@@ -75,6 +75,20 @@
 		background: #767676;
 		color: white;
 		border: solid 1px #767676;
+	}
+
+	.registerBtn {
+		display: inline-block;
+		text-decoration: none;
+		font-weight: bold;
+		color: white;
+		overflow: hidden;
+		background-color: #767676;
+		margin: 1rem 0;
+		padding: 0.5rem 1rem;
+		border: 1px solid #767676;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+		border-radius: 5px;
 	}
 
 	.link {
